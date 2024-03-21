@@ -33,13 +33,13 @@ input:hover {
   overflow: hidden;
 }
 
-.button svg {
+button svg {
   width: 1.2em;
   height: 1.2em;
   margin-right: 0.5em;
 }
 
-.button span {
+button span {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
@@ -48,8 +48,8 @@ input:hover {
   padding: 0.8em 1.2em 0.8em 1.05em;
 }
 
-.button::before,
-.button::after {
+button::before,
+button::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +58,7 @@ input:hover {
   z-index: 0;
 }
 
-.button::before {
+button::before {
   content: "";
   background: #000;
   width: 120%;
@@ -67,10 +67,10 @@ input:hover {
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-.button:hover::before {
+button:hover::before {
   transform: translate3d(100%, 0, 0);
 }
 
-.button:active {
+button:active {
   transform: scale(0.95);
 }
